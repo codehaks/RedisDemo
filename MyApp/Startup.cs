@@ -15,6 +15,12 @@ namespace MyApp
             services.AddDbContext<AppDbContext>
                 (options => options.UseSqlite("Data Source=app.sqlite"));
 
+            //services.AddStackExchangeRedisCache(options =>
+            //{
+            //    options.Configuration = "localhost";
+            //    options.InstanceName = "SampleInstance";
+            //});
+
             services.AddControllers();
 
             services.AddRazorPages()
